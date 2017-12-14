@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sivak.radio_button.MainActivity">
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="34dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pen"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pencil"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Box"
+            android:textAlignment="center" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="43dp"
+        android:text="Submit" />
+</RelativeLayout>
